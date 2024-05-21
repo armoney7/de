@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создать заявку</title>
+    <link rel="stylesheet" href="/css/create-request.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Создать заявку</h1>
+        <a href="/html/dashboard.html" class="back">В личный кабинет</a>
+        <form id="requestForm">
+            <label for="carMake">Марка автомобиля:</label>
+            <input type="text" id="carMake" name="carMake" required>
+
+            <label for="carModel">Модель автомобиля:</label>
+            <input type="text" id="carModel" name="carModel" required>
+
+            <label for="problemDescription">Описание проблемы:</label>
+            <textarea id="problemDescription" name="problemDescription" required></textarea>
+
+            <label for="bookingDate">Дата бронирования:</label>
+            <input type="date" id="bookingDate" name="bookingDate" required>
+
+            <label for="bookingTime">Время бронирования (с 8:00 до 21:00):</label>
+            <input type="time" id="bookingTime" name="bookingTime" min="08:00" max="21:00" required>
+
+            <button type="submit">Отправить заявку</button>
+        </form>
+    </div>
+    <script src="/js/create-request.js"></script>
+</body>
+</html>

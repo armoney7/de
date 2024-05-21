@@ -1,0 +1,38 @@
+/* Ваши стили */
+.request {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.request h2 {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.request p {
+    margin: 5px 0;
+}
+
+.back {
+    text-decoration: none;
+    color: black;
+    opacity: 0.5;
+}
+
+.create-request-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.create-request-link:hover {
+    background-color: #0056b3;
+}

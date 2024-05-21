@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="/css/auth.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <form id="registerForm">
+                <h1>Регистрация</h1>
+                <a href="/html/index.html" class="back">Вернуться на главную</a>
+                <input type="text" id="registerFullName" placeholder="ФИО" required>
+                <input type="tel" id="registerPhone" placeholder="Номер телефона" pattern="^\+7\d{10}$" required>
+                <input type="text" id="registerUsername" placeholder="Имя пользователя" required>
+                <input type="password" id="registerPassword" placeholder="Пароль" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$" required>
+                <button type="submit">Зарегистрироваться</button>
+                <p>Уже есть аккаунт? <a href="login.html">Войти</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="/js/register.js"></script>
+</body>
+</html>
